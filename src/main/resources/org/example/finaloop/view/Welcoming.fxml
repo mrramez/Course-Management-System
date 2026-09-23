@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="auth-panel" stylesheets="@../styles/theme.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.finaloop.controller.WelcomingCtrl">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="360.0" spacing="12">
+         <children>
+            <Label styleClass="auth-title" text="Courses Management" />
+            <Label styleClass="auth-subtitle" text="Login or create a new account." wrapText="true" />
+            <Region prefHeight="8.0" />
+            <Button defaultButton="true" maxWidth="Infinity" mnemonicParsing="false" onAction="#login" styleClass="btn-primary, btn-large" text="Login" />
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#signup" styleClass="btn-large" text="Sign up" />
+            <Button maxWidth="Infinity" mnemonicParsing="false" onAction="#continueAsGuest" styleClass="btn-ghost" text="Continue as guest" />
+         </children>
+      </VBox>
+
+      <Button fx:id="themeButton" mnemonicParsing="false" styleClass="btn-ghost" StackPane.alignment="TOP_RIGHT" />
+   </children>
+</StackPane>

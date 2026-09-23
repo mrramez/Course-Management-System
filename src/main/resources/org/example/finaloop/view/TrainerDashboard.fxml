@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane styleClass="app" stylesheets="@../styles/theme.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.finaloop.controller.TrainerDashboardCtrl">
+   <left>
+      <fx:include source="Sidebar.fxml" />
+   </left>
+   <center>
+      <ScrollPane fitToWidth="true" styleClass="page-scroll">
+         <content>
+            <VBox spacing="22" styleClass="page">
+               <children>
+                  <VBox spacing="4">
+                     <children>
+                        <Label styleClass="page-title" text="Dashboard" />
+                        <Label fx:id="welcomeLabel" styleClass="page-subtitle" wrapText="true" />
+                     </children>
+                  </VBox>
+
+                  <HBox spacing="16">
+                     <children>
+                        <VBox maxWidth="Infinity" spacing="6" styleClass="stat-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="stat-label" text="My courses" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <StackPane styleClass="stat-icon">
+                                       <children>
+                                          <Region id="icon-book" styleClass="icon" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="coursesCountLabel" styleClass="stat-value" text="0" />
+                           </children>
+                        </VBox>
+                        <VBox maxWidth="Infinity" spacing="6" styleClass="stat-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="stat-label" text="My students" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <StackPane styleClass="stat-icon">
+                                       <children>
+                                          <Region id="icon-users" styleClass="icon" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="studentsCountLabel" styleClass="stat-value" text="0" />
+                           </children>
+                        </VBox>
+                        <VBox maxWidth="Infinity" spacing="6" styleClass="stat-card" HBox.hgrow="ALWAYS">
+                           <children>
+                              <HBox alignment="CENTER_LEFT">
+                                 <children>
+                                    <Label styleClass="stat-label" text="Attendance sessions" />
+                                    <Region HBox.hgrow="ALWAYS" />
+                                    <StackPane styleClass="stat-icon">
+                                       <children>
+                                          <Region id="icon-calendar" styleClass="icon" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </HBox>
+                              <Label fx:id="sessionsCountLabel" styleClass="stat-value" text="0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+
+                  <Label styleClass="section-title" text="My Courses" />
+                  <FlowPane fx:id="coursesFlow" hgap="18.0" vgap="18.0" />
+               </children>
+            </VBox>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

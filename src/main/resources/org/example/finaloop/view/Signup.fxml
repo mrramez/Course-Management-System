@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane styleClass="auth-panel" stylesheets="@../styles/theme.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.finaloop.controller.SignupCtrl">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="360.0" spacing="12">
+         <children>
+            <Hyperlink onAction="#startback" text="Back" />
+            <Label styleClass="auth-title" text="Sign up" />
+
+            <Label fx:id="statusLabel" managed="false" maxWidth="Infinity" styleClass="banner" visible="false" wrapText="true" />
+
+            <VBox spacing="6">
+               <children>
+                  <Label styleClass="field-label" text="Name" />
+                  <TextField fx:id="nameField" promptText="Name" />
+               </children>
+            </VBox>
+            <VBox spacing="6">
+               <children>
+                  <Label styleClass="field-label" text="Email" />
+                  <TextField fx:id="emailField" promptText="example@gmail.com" />
+               </children>
+            </VBox>
+            <VBox spacing="6">
+               <children>
+                  <Label styleClass="field-label" text="Password" />
+                  <HBox alignment="CENTER_LEFT" styleClass="password-box">
+                     <children>
+                        <PasswordField fx:id="passwordField" promptText="Password" HBox.hgrow="ALWAYS" />
+                        <TextField fx:id="passwordText" managed="false" promptText="Password" visible="false" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="eyeButton" focusTraversable="false" mnemonicParsing="false" onAction="#showPassword" styleClass="icon-button" />
+                     </children>
+                  </HBox>
+                  <Label styleClass="field-hint" text="At least 8 characters with letters and numbers" />
+               </children>
+            </VBox>
+            <VBox spacing="6">
+               <children>
+                  <Label styleClass="field-label" text="Account type" />
+                  <ComboBox fx:id="roleCombo" maxWidth="Infinity" />
+               </children>
+            </VBox>
+
+            <Button defaultButton="true" maxWidth="Infinity" mnemonicParsing="false" onAction="#btnregister" styleClass="btn-primary, btn-large" text="Sign up" />
+
+            <HBox alignment="CENTER" spacing="6">
+               <children>
+                  <Label styleClass="muted" text="Already have an account?" />
+                  <Hyperlink onAction="#goLogin" text="Login" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+
+      <Button fx:id="themeButton" mnemonicParsing="false" styleClass="btn-ghost" StackPane.alignment="TOP_RIGHT" />
+   </children>
+</StackPane>
