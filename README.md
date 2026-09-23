@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🎓 Course Management System
+# Course Management System
 
 **A desktop application for managing training courses, trainers, students, enrollments and attendance.**
 
@@ -13,33 +13,33 @@
 
 ---
 
-## 📌 Overview
+## Overview
 
 Course Management System is a role-based JavaFX desktop app built as a team project for an Object-Oriented Programming course. It covers the full lifecycle of a training center: admins publish courses and assign trainers; students browse, enroll, pay and review courses; and trainers track their students and take daily attendance. All data is stored locally in an embedded SQLite database that is created automatically on first run.
 
-## ✨ Features
+## Features
 
-### 🔐 Authentication
+### Authentication
 - Sign up and log in with three roles: **Admin**, **Trainer** and **Student**
 - Passwords hashed with **BCrypt**, plus email and password-strength validation
 - Guest mode to browse the course catalog without an account
 
-### 🛠️ Admin
+### Admin
 - Dashboard with live statistics (students, trainers, courses, enrollments)
 - Create, edit and delete courses with price, description, cover image and assigned trainer
 - Searchable course table with filtering by trainer
 
-### 👨‍🎓 Student
+### Student
 - Browse the catalog with search, enrollment counts and average ratings
 - Enroll in courses and track payment status (paid / unpaid)
 - Rate and review enrolled courses (1–5 stars with comments)
 
-### 👨‍🏫 Trainer
+### Trainer
 - Dashboard with assigned courses and student counts
 - View all students enrolled in their courses
 - Daily attendance sheet per course: mark present / absent, mark all, search and save
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -49,7 +49,7 @@ Course Management System is a role-based JavaFX desktop app built as a team proj
 | Security | jBCrypt password hashing |
 | Build | Maven (wrapper included) |
 
-## 🗄️ Database Schema
+## Database Schema
 
 ```mermaid
 erDiagram
@@ -97,7 +97,7 @@ erDiagram
     }
 ```
 
-## 🏗️ Project Structure
+## Project Structure
 
 ```
 src/main/java/org/example/finaloop
@@ -113,7 +113,7 @@ src/main/resources/org/example/finaloop
 
 **OOP concepts applied:** inheritance (`ParentUsers` → `Admin` / `Trainer` / `Student`), abstraction (abstract `getHomePage()` for role-based navigation), encapsulation and polymorphism.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - JDK 25
@@ -143,11 +143,11 @@ The database file `app.db` is created automatically in the project folder on fir
 3. Sign up a **student** to browse, enroll, pay and leave reviews.
 4. Log in as the trainer to view students and take attendance.
 
-## 📄 Documentation
+## Documentation
 
 The full project report is available in [`docs/Report.pdf`](docs/Report.pdf).
 
-## 👥 Team
+## Team
 
 | Member | GitHub | Responsibilities |
 |---|---|---|
@@ -159,5 +159,5 @@ The full project report is available in [`docs/Report.pdf`](docs/Report.pdf).
 ---
 
 <div align="center">
-Built with ☕ Java and JavaFX
+Built with Java and JavaFX
 </div>
