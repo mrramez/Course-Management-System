@@ -151,7 +151,7 @@ The full project report is available in [`docs/Report.pdf`](docs/Report.pdf).
 
 | Member | GitHub | Responsibilities |
 |---|---|---|
-| **Ramez Medhat** | [@mrramez](https://github.com/mrramez) | Trainer & Attendance: attendance table and JOIN queries, Trainer / Attendance models, Trainer Dashboard, My Students and Attendance screens |
+| **Ramez Al-Maqtari** | [@mrramez](https://github.com/mrramez) | Trainer & Attendance: attendance table and JOIN queries, Trainer / Attendance models, Trainer Dashboard, My Students and Attendance screens |
 | **Mohanad Hajeb** | [@MohanadSec](https://github.com/MohanadSec) | Admin & Courses: courses table, Admin / Course models, Admin Dashboard, Add Course and View Courses screens |
 | **Ahmed Al-Hammadi** | [@Ahmedcrp](https://github.com/Ahmedcrp) | Student & Enrollment: enrollments and reviews tables, Student / Enrollment / Review models, Browse Courses, My Courses and Review screens |
 | **Abdulrahman Al-Baadani** | — | Authentication & Core: users table, DBconnection, ParentUsers, Authentication, Welcome / Login / Sign-up screens |
